@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>x + y + z = <span id="valorX">3</span> + <span id="valorY">7</span> + <span id="ValorZ">9</span> = <span id="resultado" >0</span> </h1>
+
+        <script>
+            var eValorX= document.getElementById("valorX");
+            var eValorY= document.getElementById("valorY");
+            var eValorZ= document.getElementById("ValorZ");
+
+            var x= Number(eValorX.textContent);
+            var y= Number(eValorY.textContent);
+            var z= Number(eValorZ.textContent);
+
+            var result=x+y+z;
+
+            var eResult= document.getElementById("resultado");
+            eResult.textContent= result;
+
+        </script>
+    
+</body>
+</html>
