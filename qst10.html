@@ -7,11 +7,23 @@
 <body>
     <p id="nome">Scott</p>
     <p id="sobrenome">Mescudi</p>
-    <h1 id="nomeCompleto"></h1>
+
+    <h1>Bem Vindo <span id="nomecompleto"> </span></h1>
         
         <script>
-            
-    
+
+            var nome;
+            var sobrenome
+
+            eNome= document.getElementById("nome");
+            eSobrenome= document.getElementById("sobrenome");
+
+            nome=(eNome.textContent);
+            sobrenome=(eSobrenome.textContent);
+
+            var nomeCompleto=nome+' '+sobrenome;
+            var eNomeCompleto= document.getElementById("nomecompleto");
+            eNomeCompleto.textContent=nomeCompleto;
     
     
         </script>
