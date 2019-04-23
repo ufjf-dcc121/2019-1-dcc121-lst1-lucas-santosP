@@ -5,12 +5,25 @@
     <title>Questão 07</title>
 </head>
 <body>
-    <script>
-        var nome='Lucas';
-        var sobrenome='S. Policarpo';
-        var idade=19;
+        
+    <h1>Olá <span id="nome">Fulano</span> <span id="sobrenome">da Silva</span> ! Você tem <span id="idade">20</span> anos!</h1>
 
+    <script> 
+    var nome='Lucas';
+    var sobrenome='S. Policarpo';
+    var idade=19;
+     
+    //RECEBE OS VALORES DO TEXTO HTML NO BODY:
+        var eNome = document.getElementById("nome");
+        var eSobrenome = document.getElementById("sobrenome");
+        var eIdade =document.getElementById("idade");
+    
+    //ALTERA O TEXTO RECEBIDO PARA OS VALROES DAS VARIAVEIS DECLARADAS NO INICIO DO SCRIPT
+        eNome.textContent= nome;
+        eSobrenome.textContent= sobrenome;
+        eIdade.textContent= idade;
 
     </script>
+
 </body>
 </html>
