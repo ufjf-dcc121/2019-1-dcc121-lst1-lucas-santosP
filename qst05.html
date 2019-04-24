@@ -6,15 +6,17 @@
 </head>
 <body>
     <script>
-        var x=2, y=5, z=8, resultado=x*y*z;
-        
-        function imprime(v){
-            console.log(v)
+        function imprime(){
+            resultado=x*y*z;
+            console.log('x='+x);
+            console.log('y='+y);
+            console.log('z='+z);
+            console.log('Resultado = '+resultado);
         }
-        imprime('x='+x);
-        imprime('y='+y);
-        imprime('z='+z);
-        imprime('Resultado = '+resultado);
+
+        var x=2, y=5, z=8, resultado=x*y*z;
+
+        imprime();
 
     </script>
 </body>
