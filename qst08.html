@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Questão 08</title>
 </head>
 <body>
     <h1>x + y + z = <span id="valorX">3</span> + <span id="valorY">7</span> + <span id="ValorZ">9</span> = <span id="resultado" >0</span> </h1>
 
         <script>
+            function calc(){
             var eValorX= document.getElementById("valorX");
             var eValorY= document.getElementById("valorY");
             var eValorZ= document.getElementById("ValorZ");
@@ -20,7 +21,8 @@
 
             var eResult= document.getElementById("resultado");
             eResult.textContent= result;
-
+            }
+            calc();
         </script>
     
 </body>
