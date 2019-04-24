@@ -7,7 +7,7 @@
 <body>
     <p>NOME: <span id="nome">Scott</span><br>SOBRENOME: <span id="sobrenome">Mescudi</span></p>
 
-    <h1>Bem Vindo <span id="nomecompleto"> </span> !</h1>
+    <h1 id="nomecompleto"></h1>
         
         <script>
 
@@ -22,7 +22,7 @@
 
             var nomeCompleto=nome+' '+sobrenome;
             var eNomeCompleto= document.getElementById("nomecompleto");
-            eNomeCompleto.textContent=nomeCompleto;
+            eNomeCompleto.textContent="Bem vindo "+nomeCompleto+"!";
     
     
         </script>
