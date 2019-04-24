@@ -7,24 +7,26 @@
 <body>
     <div id="x">7</div>
     <div id="y">5</div>
-    <div id="produto"></div>
+    <div id="produto"> </div>
     <div id="soma"></div>
 
-    <button id="calcular" >CALCULAR</button>
-
     <script>
+        var x, y, soma,produto;
+        //recebe os valores do html
         var eX= document.getElementById("x");
         var eY= document.getElementById("y");
         var eProduto= document.getElementById("produto");
         var eSoma= document.getElementById("soma");
+        //passa os valores paras as variaveis
+        x= Number(eX.textContent);
+        y= Number(eY.textContent);
+        //calcula
+        soma=x+y;
+        produto=x*y;
+        //retorna para html as frase com os novos valores
+        eProduto.textContent="O produto de "+x+" e "+y+" é "+produto+"!";
+        eSoma.textContent="A Soma de "+x+" e "+y+" é "+soma+"!";
 
-        var x= Number(eX.textContent);
-        var y= Number(eY.textContent);
-        var produto= Number(eProduto.textContent);
-        var soma= Number(eSoma.textContent);
-        
-
-    </script>
-    
+    </script> 
 </body>
 </html>
