@@ -5,8 +5,17 @@
     <title>Questão 13</title>
 </head>
 <body>
-    <div if="interativo">Clique-me!</div>
+    <div id="interativo">Clique-me!</div>
+    
         <script>
+            var eInterativo= document.getElementById("interativo");
+
+            eInterativo.addEventListener("click", fun);
+
+            function fun(){
+                eInterativo.textContent="Funcionou!";
+            }
+
         </script>
 </body>
 </html>
