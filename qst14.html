@@ -13,9 +13,19 @@
     <button id=calcular>CALCULAR!</button>
 
         <script>
-            var x,y,produto,soma;
-    
-    
+            var x,y,produto,soma, botao;
+
+            var eX= document.getElementById("x");
+            var eY= document.getElementById("y");
+            var eSoma= document.getElementById("soma");
+            var eProduto= document.getElementById("produto");
+            Botao= document.getElementById("calcular");
+
+            x=Number(eX.textContent);
+            y=Number(eY.textContent);
+
+            document.getElementById("x").contentEditable = true;
+            document.getElementById("y").contentEditable = true;
         </script>
     
 </body>
