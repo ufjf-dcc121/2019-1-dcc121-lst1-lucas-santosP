@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Questao 15</title>
+    <title>Questão 15</title>
 </head>
 <body>
     <main>
@@ -12,10 +12,10 @@
                 em Confeitaria Básica; <span id="coberturas">80</span> em Coberturas e <span id="bolos">60</span>
                 em Broas e Bolos.</p>
 
-            <p id="resultado"></p>
+            <p id="resultado"></p>            
             <button id="avaliar">AVALIAR</button>
             <button id="limpar">LIMPAR</button>
-            <p itemref="melhorias"></p>
+            <strong> <p id="melhorias"></p> </strong>
 
             <script>
                 var nome= document.getElementById("nome");
@@ -36,22 +36,31 @@
                 bolos.contentEditable="true";
 
                 botaoLimpar.addEventListener("click", function limparClick(){
-                    resultado.textContent="";
-                    melhorias.textContent="";
+                    resultado.textContent= "";
+                    melhorias.textContent= "";
                 });
 
                 botaoAvaliar.addEventListener("click", function avaliarClick(){
+                    //Calculo da media!
+                    var nConf=Number(confeitaria.textContent);
+                    var nCober=Number(coberturas.textContent);
+                    var nBolos=Number(bolos.textContent);
+                    media= (nConf+nCober+nBolos )/3;
+
                     if(media>=70)
-                        resultado.textContent="Parabens fulano! Você esta aprovado com media 70!"
+                        resultado.textContent="Parabens "+nome.textContent+" ! Você esta aprovado com media "+media+" !";
                     else
-                        resultado.textContent="Você está reprovado com média 50!"
+                        resultado.textContent="Você está reprovado com média "+media+" !";
 
+                    if( nConf < 60)    
+                        melhorias.innerHTML+= nome.textContent+", considere estudar mais Confeitaria!!";
+                    
+                    if( nCober < 60)   
+                        melhorias.textContent+= nome.textContent+", considere estudar mais Coberturas!!";
+                    
+                    if( nBolos < 60)    
+                        melhorias.textContent+= nome.textContent+", considere estudar mais Broas e Bolos!!";
                 });
-
-            
-            
-            
-            
             
             </script>
     </main>
