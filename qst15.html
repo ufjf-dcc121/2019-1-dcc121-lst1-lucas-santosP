@@ -38,7 +38,15 @@
                 botaoLimpar.addEventListener("click", function limparClick(){
                     resultado.textContent="";
                     melhorias.textContent="";
-                })
+                });
+
+                botaoAvaliar.addEventListener("click", function avaliarClick(){
+                    if(media>=70)
+                        resultado.textContent="Parabens fulano! Você esta aprovado com media 70!"
+                    else
+                        resultado.textContent="Você está reprovado com média 50!"
+
+                });
 
             
             
