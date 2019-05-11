@@ -3,5 +3,4 @@
 
 Aluno: Lucas Santos Policarpo
 
-Lista01:https://docs.google.com/document/d/1xD1ZU-jy_ZCHHiDh6AfYE_R5zIOn-l_aDiR6GdNZD-o/edit
-Lista02:https://docs.google.com/document/d/1mR9aym69U38TcQIYwCXBYqqFNFtykW_CzKVIdWP49ic/edit
+Link para acesso da pagina: https://ufjf-dcc121.github.io/2019-1-dcc121-lst1-lucas-santosP/
